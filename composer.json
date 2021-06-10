@@ -10,7 +10,7 @@
     }
   ],
   "version": "1.0",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=8.0",
     "zendframework/zendframework1": "dev-master",
