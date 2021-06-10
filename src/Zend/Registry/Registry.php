@@ -14,7 +14,7 @@ class Registry extends Zend_Registry
      * Registry object provides storage for shared objects.
      * @var Registry
      */
-    private static Registry $registry;
+    private static ?Registry $registry = null;
 
     /**
      * Retrieves the default registry instance.
@@ -158,5 +158,10 @@ class Registry extends Zend_Registry
     private static function throwRegistryKeyAlreadyExistsException(string $key): void
     {
         throw new RegistryKeyAlreadyExistsException("Registry Key $key already exists");
+    }
+
+    public function offsetExists($index)
+    {
+        return array_key_exists($index, $this -> getArrayCopy());
     }
 }
