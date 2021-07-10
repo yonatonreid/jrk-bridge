@@ -47,7 +47,8 @@
     "symfony/console": "5.2.x-dev",
     "jippi/vault-php-sdk": "3.0.0",
     "facebook/graph-sdk": "^5.1",
-    "laminas/laminas-code": "3.5.0"
+    "laminas/laminas-code": "3.5.0",
+    "laminas/laminas-mail": "2.15.x-dev"
   },
   "autoload": {
     "psr-4": {
