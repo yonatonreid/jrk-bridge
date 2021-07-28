@@ -8,6 +8,15 @@ namespace Bridge\Laminas\Config;
 class Config extends \Laminas\Config\Config
 {
     /**
+     * @param string $node
+     * @return bool
+     */
+    public function hasConfigNode(string $node): bool
+    {
+        return $this -> offsetExists($node);
+    }
+
+    /**
      * @param string|null $node
      * @param string $sep
      * @param null $default
