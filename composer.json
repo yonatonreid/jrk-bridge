@@ -14,7 +14,7 @@
   "require": {
     "php": ">=8.0",
     "zendframework/zendframework1": "dev-master",
-    "phpunit/phpunit": "9.5.x-dev",
+    "phpunit/phpunit": "9.5.7",
     "laminas/laminas-cache-storage-adapter-redis": "1.1.x-dev",
     "laminas/laminas-view": "2.12.x-dev",
     "laminas/laminas-mvc": "3.2.x-dev",

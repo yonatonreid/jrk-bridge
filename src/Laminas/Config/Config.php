@@ -38,4 +38,9 @@ class Config extends \Laminas\Config\Config
         }
         return $ret;
     }
+
+    public function equals(Config $config):bool
+    {
+        return ($config === $this);
+    }
 }
