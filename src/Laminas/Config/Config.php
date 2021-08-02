@@ -16,6 +16,11 @@ class Config extends \Laminas\Config\Config
         return $this -> offsetExists($node);
     }
 
+    public function getNode(string $node): mixed
+    {
+        return $this -> get($node);
+    }
+
     /**
      * @param string|null $node
      * @param string $sep
@@ -39,7 +44,7 @@ class Config extends \Laminas\Config\Config
         return $ret;
     }
 
-    public function equals(Config $config):bool
+    public function equals(Config $config): bool
     {
         return ($config === $this);
     }
