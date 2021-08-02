@@ -49,7 +49,8 @@
     "facebook/graph-sdk": "^5.1",
     "laminas/laminas-code": "3.5.0",
     "laminas/laminas-mail": "2.15.x-dev",
-    "ramsey/uuid": "4.1.1"
+    "ramsey/uuid": "4.1.1",
+    "intervention/image": "2.6.1"
   },
   "autoload": {
     "psr-4": {
