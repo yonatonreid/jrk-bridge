@@ -52,7 +52,8 @@
     "ramsey/uuid": "4.1.1",
     "intervention/image": "2.6.1",
     "laminas/laminas-captcha": "2.11.x-dev",
-    "laminas/laminas-recaptcha": "3.4.x-dev"
+    "laminas/laminas-recaptcha": "3.4.x-dev",
+    "anahkiasen/underscore-php": "2.0.0"
   },
   "autoload": {
     "psr-4": {
