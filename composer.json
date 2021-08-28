@@ -53,7 +53,9 @@
     "intervention/image": "2.6.1",
     "laminas/laminas-captcha": "2.11.x-dev",
     "laminas/laminas-recaptcha": "3.4.x-dev",
-    "anahkiasen/underscore-php": "2.0.0"
+    "anahkiasen/underscore-php": "2.0.0",
+    "laminas/laminas-serializer": "2.11.x-dev",
+    "laminas/laminas-diagnostics": "1.11.x-dev"
   },
   "autoload": {
     "psr-4": {
