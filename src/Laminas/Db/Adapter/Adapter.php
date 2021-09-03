@@ -19,6 +19,13 @@ class Adapter extends \Laminas\Db\Adapter\Adapter
         $this -> query($sql, parent::QUERY_MODE_EXECUTE);
     }
 
+    public function rawPrepare(string $sql, array $params = []): void
+    {
+        $stmt = $this -> createStatement($sql);
+        $stmt -> prepare();
+        $stmt -> execute($params);
+    }
+
     public function startTimer(string $timer)
     {
         $this -> getProfiler() -> profilerStart($timer);
