@@ -59,7 +59,8 @@
     "php-amqplib/php-amqplib": "3.0.x-dev",
     "abraham/twitteroauth": "dev-main",
     "cubicl/php-sorting": "dev-master",
-    "bocharsky-bw/arrayzy": "dev-master"
+    "bocharsky-bw/arrayzy": "dev-master",
+    "google/apiclient": "2.x-dev"
   },
   "autoload": {
     "psr-4": {
