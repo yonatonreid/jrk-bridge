@@ -56,7 +56,10 @@
     "anahkiasen/underscore-php": "2.0.0",
     "laminas/laminas-serializer": "2.11.x-dev",
     "laminas/laminas-diagnostics": "1.11.x-dev",
-    "php-amqplib/php-amqplib": "3.0.x-dev"
+    "php-amqplib/php-amqplib": "3.0.x-dev",
+    "abraham/twitteroauth": "dev-main",
+    "cubicl/php-sorting": "dev-master",
+    "bocharsky-bw/arrayzy": "dev-master"
   },
   "autoload": {
     "psr-4": {
