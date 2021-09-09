@@ -13,7 +13,6 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=8.0",
-    "zendframework/zendframework1": "dev-master",
     "phpunit/phpunit": "9.5.7",
     "laminas/laminas-cache-storage-adapter-redis": "1.1.x-dev",
     "laminas/laminas-view": "2.12.x-dev",
@@ -60,7 +59,9 @@
     "abraham/twitteroauth": "dev-main",
     "cubicl/php-sorting": "dev-master",
     "bocharsky-bw/arrayzy": "dev-master",
-    "google/apiclient": "2.x-dev"
+    "google/apiclient": "2.x-dev",
+    "zendframework/zendframework1": "1.12.x-dev",
+    "symfony/string": "5.4.x-dev"
   },
   "autoload": {
     "psr-4": {
