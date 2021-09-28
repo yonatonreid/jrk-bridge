@@ -9,14 +9,11 @@ class S3Client extends \Aws\S3\S3Client
 
     public function deleteBucket(string $bucket): Result
     {
-        $objects = $this->getIterator('ListObjects', ([
+        $objects = $this -> getIterator('ListObjects', ([
             'Bucket' => $bucket
         ]));
         foreach ($objects as $object) {
-            $this->deleteObject([
-                'Bucket' => $bucket,
-                'Key' => $object['Key'],
-            ]);
+            $this -> deleteItem($bucket, $object['Key']);
         }
         return parent ::deleteBucket([
             'Bucket' => $bucket
