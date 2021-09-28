@@ -6,6 +6,40 @@ use Aws\Result;
 
 class S3Client extends \Aws\S3\S3Client
 {
+    public function getObjects(string $bucket, bool $listAll = false, bool $includeMeta = false): array
+    {
+        if ($listAll) {
+            $res = $this -> getPaginator('ListObjects', [
+                'Bucket' => $bucket
+            ]);
+        } else {
+            $res = $this -> listObjects([
+                'Bucket' => $bucket
+            ]);
+        }
+        $fArr = [];
+        if ($listAll) {
+            foreach ($res as $result) {
+                foreach ($result['Contents'] as $object) {
+                    if ($includeMeta) {
+                        $fArr[] = $object;
+                    } else {
+                        $fArr[] = $object['Key'];
+                    }
+                }
+            }
+        } else {
+            foreach ($res['Contents'] as $object) {
+                if ($includeMeta) {
+                    $fArr[] = $object;
+                } else {
+                    $fArr[] = $object['Key'];
+                }
+            }
+        }
+        return $fArr;
+    }
+
     public function deleteItem(string $bucket, string $key): Result
     {
         return $this -> deleteObject([
