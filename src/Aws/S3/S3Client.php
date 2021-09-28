@@ -6,6 +6,14 @@ use Aws\Result;
 
 class S3Client extends \Aws\S3\S3Client
 {
+
+    public function deleteBucket(string $bucket): Result
+    {
+        return parent ::deleteBucket([
+            'Bucket' => $bucket
+        ]);
+    }
+
     public function getObjects(string $bucket, bool $listAll = false, bool $includeMeta = false): array
     {
         if ($listAll) {
