@@ -6,6 +6,14 @@ use Aws\Result;
 
 class S3Client extends \Aws\S3\S3Client
 {
+    public function deleteItem(string $bucket, string $key): Result
+    {
+        return $this -> deleteObject([
+            'Bucket' => $bucket,
+            'Key' => $key
+        ]);
+    }
+
     public function getBucketNames(): array
     {
         $buckets = $this -> listBuckets();
