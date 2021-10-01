@@ -11,6 +11,11 @@ class S3Client extends \Aws\S3\S3Client
         return $this -> doesBucketExist($bucketInQuestion);
     }
 
+    public function objectUrl(string $key, string $bucket): string
+    {
+        return $this -> getObjectUrl($bucket, $key);
+    }
+
     public function copyItem(string $sourceBucket, string $sourceKey, string $targetKey, string $targetBucket): Result
     {
         $copySource = "{$sourceBucket}/{$sourceKey}";
