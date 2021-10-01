@@ -6,6 +6,20 @@ use Aws\Result;
 
 class S3Client extends \Aws\S3\S3Client
 {
+    public function bucketExists(string $bucketInQuestion): bool
+    {
+        return $this -> doesBucketExist($bucketInQuestion);
+    }
+
+    public function copyItem(string $sourceBucket, string $sourceKey, string $targetKey, string $targetBucket): Result
+    {
+        $copySource = "{$sourceBucket}/{$sourceKey}";
+        return $this -> copyObject([
+            'Bucket' => $targetBucket,
+            'Key' => $targetKey,
+            'CopySource' => $copySource
+        ]);
+    }
 
     public function deleteBucket(string $bucket): Result
     {
