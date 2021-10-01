@@ -12,4 +12,13 @@ class Ec2Client extends \Aws\Ec2\Ec2Client
             'InstanceId' => $instanceId
         ]);
     }
+
+    public function describeInstanceKernel(string $instanceId, bool $dryRun): \Aws\Result
+    {
+        return $this -> describeInstanceAttribute([
+            'Attribute' => 'kernel',
+            'DryRun' => $dryRun,
+            'InstanceId' => $instanceId
+        ]);
+    }
 }
