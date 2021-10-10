@@ -61,7 +61,8 @@
     "bocharsky-bw/arrayzy": "dev-master",
     "google/apiclient": "2.x-dev",
     "zendframework/zendframework1": "1.12.x-dev",
-    "symfony/string": "5.4.x-dev"
+    "symfony/string": "5.4.x-dev",
+    "laminas/laminas-test": "4.0.x-dev"
   },
   "autoload": {
     "psr-4": {
