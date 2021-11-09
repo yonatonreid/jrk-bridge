@@ -9,7 +9,7 @@ class Config extends \Laminas\Config\Config
 {
     public function mergeArray(array $config): void
     {
-        $new = new self($config);
+        $new = new \Laminas\Config\Config($config);
         $this -> merge($new);
     }
 
