@@ -15,7 +15,7 @@
     "php": ">=8.0",
     "phpunit/phpunit": "9.5.7",
     "laminas/laminas-cache-storage-adapter-redis": "1.1.x-dev",
-    "laminas/laminas-view": "3.0.x-dev",
+    "laminas/laminas-view": "2.14.x-dev",
     "laminas/laminas-mvc": "3.2.x-dev",
     "laminas/laminas-mvc-plugin-flashmessenger": "1.3.x-dev",
     "spatie/array-to-xml": "dev-main",
