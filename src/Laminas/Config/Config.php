@@ -7,6 +7,12 @@ namespace Bridge\Laminas\Config;
 
 class Config extends \Laminas\Config\Config
 {
+    public function mergeArray(array $config): void
+    {
+        $new = new self($config);
+        $this -> merge($new);
+    }
+
     /**
      * @param string $node
      * @return bool
