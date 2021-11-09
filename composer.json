@@ -18,7 +18,7 @@
     "laminas/laminas-view": "2.12.x-dev",
     "laminas/laminas-mvc": "3.2.x-dev",
     "laminas/laminas-mvc-plugin-flashmessenger": "1.3.x-dev",
-    "spatie/array-to-xml": "dev-master",
+    "spatie/array-to-xml": "dev-main",
     "league/csv": "dev-master",
     "laminas/laminas-authentication": "2.8.x-dev",
     "laminas/laminas-db": "2.12.x-dev",
