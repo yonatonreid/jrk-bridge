@@ -39,13 +39,14 @@ class S3Client extends \Aws\S3\S3Client
         ]);
     }
 
-    public function fileSize(string $bucket,string $key): Result
+    public function fileSize(string $bucket, string $key): Result
     {
-        return $this->headObject([
-           'Bucket' => $bucket,
-           'Key' => $key
+        return $this -> headObject([
+            'Bucket' => $bucket,
+            'Key' => $key
         ]);
     }
+
     public function getObjects(string $bucket, bool $listAll = false, bool $includeMeta = false): array
     {
         if ($listAll) {
