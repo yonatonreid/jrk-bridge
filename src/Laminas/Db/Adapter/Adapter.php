@@ -21,9 +21,9 @@ class Adapter extends \Laminas\Db\Adapter\Adapter
 
     public function rawPrepare(string $sql, array $params = []): ResultInterface
     {
-        $stmt = $this -> createStatement($sql);
+        $stmt = $this -> createStatement($sql,$params);
         $stmt -> prepare();
-        return $stmt -> execute($params);
+        return $stmt -> execute();
     }
 
     public function startTimer(string $timer)
@@ -38,9 +38,9 @@ class Adapter extends \Laminas\Db\Adapter\Adapter
 
     public function preparedCollection(string $sql, array $params = [], object $entity = null): ResultInterface|ResultSet|bool
     {
-        $stmt = $this -> createStatement($sql);
+        $stmt = $this -> createStatement($sql,$params);
         $stmt -> prepare();
-        $res = $stmt -> execute($params);
+        $res = $stmt -> execute();
         if ($res instanceof ResultInterface && $res -> isQueryResult()) {
             if (is_null($entity)) {
                 $resultSet = new ResultSet();
