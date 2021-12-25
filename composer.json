@@ -17,7 +17,8 @@
 	"laminas/laminas-mvc": "^3.3.0",
 	"laminas/laminas-paginator": "^2.11.0",
 	"laminas/laminas-servicemanager": "^3.7.0",
-	"laminas/laminas-stdlib": "^3.6.1"
+	"laminas/laminas-stdlib": "^3.6.1",
+	"laminas/laminas-filter":"2.14.x-dev"
   },
   "autoload": {
     "psr-4": {
