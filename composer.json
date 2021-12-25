@@ -13,7 +13,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=8.0",
-    "phpunit/phpunit": "9.5.7",
+    "phpunit/phpunit": "^9.5.10",
     "laminas/laminas-cache-storage-adapter-redis": "1.1.x-dev",
     "laminas/laminas-view": "2.14.x-dev",
     "laminas/laminas-mvc": "3.3.x-dev",
